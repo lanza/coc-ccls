@@ -164,7 +164,11 @@ function getClientConfig(wsRoot: string): ClientConfig {
   ]);
   const clientConfig: ClientConfig = {
     highlight: {
+<<<<<<< HEAD
+      blacklist: hasAnySemanticHighlight() ? [] : ['.*'],
+=======
       blacklist: hasAnySemanticHighlight() ? [] : [".*"],
+>>>>>>> Cleanup config mapping logic in getClientConfig
       lsRanges: true,
     },
     launchArgs: [] as string[],
